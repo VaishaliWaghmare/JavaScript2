@@ -1,0 +1,13 @@
+Methods of Array:-
+
+pop():- pop method remove the last element from an array
+             return type - last element
+
+push():- The push() method adds a new element to an array (at the end)
+               return type - returns the new array length
+
+shift():- remove the element from the begining
+              return type - first removed element
+
+unshift():- Add the element from the begining
+             return type - returns the new array length
