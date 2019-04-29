@@ -1,0 +1,4 @@
+b.textContent
+b.textContent="dom1"
+textContent=use for to get the value and to chnage the value. use only on one element
+innerHTML=work as node. work on one or multiple element.

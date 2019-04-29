@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> Dynamically Create Element </title>
+      <script type = "text/javascript">
+        function addNode()
+        {
+          var newP = document.createNode("p");
+          var textNode = document.createTextNode("This is a new text Node");
+          newP.appendChild(textNode);
+          document.getElementById("firstP").appendChild(newP);
+        }
+      </script>
+  </head>
+  <body>
+      <p id = "firstP">First paragraph</p>
+      addNode();
+  </body>
+</html>

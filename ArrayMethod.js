@@ -24,37 +24,43 @@
 
 
 //two dimensional Array
-var correctAnswer = 0;
-var a = [
-  ["What is a capital of india?", "DELHI"],
-  ["What is city of orange", "NAGPUR"]
-];
-var answer;
-function questionAnswer()
-{
-  for (var i=0; i < a.lenght; i++)
-  {
-    answer = prompt(a[i][0]);
-    if(answer.toUpperCase()== a[i][1])
-    {
-      correctAnswer +=1;
-    }
-  }
-}
-questionAnswer();
-var wrongAnswer = a.lenght-correctAnswer;
-document.write("You have given" +correctAnswer+ "Correct answer");
-document.write("You have given" +wrongAnswer+ "wrong answer");
+// var correctAnswer = 0;
+// var a = [
+//   ["What is a capital of india?", "DELHI"],
+//   ["What is city of orange", "NAGPUR"]
+// ];
+// var answer;
+// function questionAnswer()
+// {
+//   for (var i=0; i < a.lenght; i++)
+//   {
+//     answer = prompt(a[i][0]);
+//     if(answer.toUpperCase()== a[i][1])
+//     {
+//       correctAnswer +=1;
+//     }
+//   }
+// }
+// questionAnswer();
+// var wrongAnswer = a.lenght-correctAnswer;
+// document.write("You have given" +correctAnswer+ "Correct answer");
+// document.write("You have given" +wrongAnswer+ "wrong answer");
+//
+// if(correctAnswer==2)
+// {
+//   document.write("You win gold")
+// }
+// if(correctAnswer >=1)
+// {
+//   document.write("You win silver");
+// }
+// else
+// {
+//   document.write("You need to study hard");
+// }
 
-if(correctAnswer==2)
+function changeColor(newColor)
 {
-  document.write("You win gold")
-}
-if(correctAnswer >=1)
-{
-  document.write("You win silver");
-}
-else
-{
-  document.write("You need to study hard");
+ const a = document.getElementById("newid");
+ a.style.color = newColor;
 }
